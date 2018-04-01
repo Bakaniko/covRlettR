@@ -4,6 +4,14 @@ Provides a R + tinyTex workflow produce customized cover letter.
 
 Based on  <a href="https://yihui.name/tinytex/">TinyTeX</a> and <a href="https://github.com/xdanaux/moderncv/tree/master/examples">Moderncv</a>
 
+## Todo
+### 1.0 release
+* Working with LaTeX template
+
+### 2.0 release
+* Working with pandoc and markdown data
+
+
 ## Installation
 
 Install it with this url:
