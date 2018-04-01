@@ -6,11 +6,21 @@ Based on  <a href="https://yihui.name/tinytex/">TinyTeX</a> and <a href="https:/
 
 ## Todo
 ### 1.0 release
-* Working with LaTeX template
 
-### 2.0 release
-* Working with pandoc and markdown data
+[x] Working with basic  LaTeX template
 
+### 1.1 release
+
+[ ] Working with pandoc and (R)markdown data
+[ ] change style
+[ ] change color
+[ ] papersize
+
+### 1.2 release
+[ ] Cover letter text in mardown file body
+
+### 2.0
+[ ] resume in markdown
 
 ## Installation
 
@@ -44,7 +54,13 @@ This package have been tested only on Ubuntu 16.04 with R 3.4.3.
 ```r
 library('covRlettR')
 ```
-
+### Usage
+```r
+library('covRlettR')
+covRlettR::build_letter(filename="resume.tex") # build the resume
+covRlettR::build_letter(filename="cover_letter.tex") # build the cover letter
+covRlettR::build_letter(filename="cover_letter_resume.tex") # build the cover letter AND the resume
+```
 
 ### Contribute
 
