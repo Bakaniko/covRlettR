@@ -11,9 +11,12 @@ Based on  <a href="https://yihui.name/tinytex/">TinyTeX</a> and <a href="https:/
 
 ### 1.1 release
 
-[ ] Working with pandoc and (R)markdown data
+[X] Working with pandoc and (R)markdown data
+
 [ ] change style
+
 [ ] change color
+
 [ ] papersize
 
 ### 1.2 release
@@ -28,7 +31,7 @@ Install it with this url:
 
 ```r
 library('devtools')
-install_url("more to come")
+install_github("bakaniko/covRlettR")
 ```
 
 It will install TinyTex during the process (which can take up to 200 Mo of disk space).
@@ -36,7 +39,6 @@ It will install TinyTex during the process (which can take up to 200 Mo of disk 
 At the first use, it will install several LaTeX packages and their dependencies :
 
 - moderncv 
-- Linux Libertine
 - Font Awesome
 
 
@@ -55,11 +57,9 @@ This package have been tested only on Ubuntu 16.04 with R 3.4.3.
 library('covRlettR')
 ```
 ### Usage
+Copy the `data/` folder into your work place. Open the `letter.Rmd` file with Rstudio and Knit the pdf document.
 ```r
 library('covRlettR')
-covRlettR::build_letter(filename="resume.tex") # build the resume
-covRlettR::build_letter(filename="cover_letter.tex") # build the cover letter
-covRlettR::build_letter(filename="cover_letter_resume.tex") # build the cover letter AND the resume
 ```
 
 ### Contribute
