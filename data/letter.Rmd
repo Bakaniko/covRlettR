@@ -19,14 +19,15 @@ adress:
   country: country
 title: A cover letter template
 opening: Dear Sir or Madam,
-#phone: #optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+### phone ###
+#optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 mobile: +1~(234)~567~890
 fixed: +2~(345)~678~901
 fax: +3~(456)~789~012
 email: john@doe.org
 homepage: www.johndoe.com
 
-#socialmedia: 
+### social media ###
 github: jdoe
 linkedin: john.doe
 twitter: jdoe
