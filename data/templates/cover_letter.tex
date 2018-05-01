@@ -9,8 +9,19 @@
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+$if(style)$
+\moderncvstyle{$style$}
+$endif$
+
+$if(color)$
+\moderncvcolor{$color$}
+$endif$
+
+%\moderncvstyle{casual}
+
+\moderncvcolor{blue}
+                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+                              % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -36,14 +47,47 @@ $if(adress)$
 \address{$street$  $number$}{$postcode$ $city$}{$country$}
 $endif$
 
-\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\phone[fixed]{+2~(345)~678~901}
-\phone[fax]{+3~(456)~789~012}
-\email{john@doe.org}                               % optional, remove / comment the line if not wanted
-\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
-\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+
+$if(mobile)$
+\phone[mobile]{$mobile$}
+$endif$
+$if(fixed)$
+\phone[fixed]{$fixed$}
+$endif$
+$if(fax)$
+\phone[fax]{$fax$}
+$endif$
+
+
+
+
+$if(email)$
+  \homepage{$email$}
+$endif$
+
+
+$if(homepage)$
+  \homepage{$homepage$}
+$endif$
+
+
+$if(linkedin)$
+  \social[linkedin]{$linkedin$}
+$endif$
+
+$if(twitter)$
+  \social[twitter]{$twitter$}
+$endif$
+
+$if(github)$
+  \social[github]{$github$}
+$endif$
+
+
+                        % optional, remove / comment the line if not wanted
+                        % optional, remove / comment the line if not wanted
+                            % optional, remove / comment the line if not wanted
+                           % optional, remove / comment the line if not wanted
 \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 \quote{Some quote}                                 % optional, remove / comment the line if not wanted

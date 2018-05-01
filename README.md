@@ -13,11 +13,11 @@ Based on  <a href="https://yihui.name/tinytex/">TinyTeX</a> and <a href="https:/
 
 [X] Working with pandoc and (R)markdown data
 
-[ ] change style
+[X] change style
 
-[ ] change color
+[X] change color
 
-[ ] papersize
+[] papersize
 
 ### 1.2 release
 [ ] Cover letter text in mardown file body

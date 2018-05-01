@@ -4,6 +4,10 @@ fontsize: 12pt
 output: 
   pdf_document:
     template: templates/cover_letter.tex
+    
+color : green #color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+style : banking # style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
 firstname: John
 lastname: Doe
 date: January 01, 1984
@@ -15,6 +19,17 @@ adress:
   country: country
 title: A cover letter template
 opening: Dear Sir or Madam,
+#phone: #optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+mobile: +1~(234)~567~890
+fixed: +2~(345)~678~901
+fax: +3~(456)~789~012
+email: john@doe.org
+homepage: www.johndoe.com
+
+#socialmedia: 
+github: jdoe
+linkedin: john.doe
+twitter: jdoe
 ---
 
 This is a test.
